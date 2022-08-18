@@ -1,0 +1,13 @@
+/* Interface */
+#define function whatIsTheMeaningOfLife() view returns (uint256)
+
+/* Methods */
+#define macro MAIN() = takes(0) returns(0) {
+    0x2A // [42]
+    0x00  // [offset, 42]
+    mstore // []
+    0x20    // [size]
+    0x00    // [offset, size]
+    return
+}
+
