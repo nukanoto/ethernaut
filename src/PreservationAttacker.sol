@@ -10,7 +10,7 @@ contract PreservationAttacker {
 
     constructor() {}
 
-    function setTime(uint256 _time) external {
+    function setTime(uint256) external {
         owner = msg.sender;
     }
 }

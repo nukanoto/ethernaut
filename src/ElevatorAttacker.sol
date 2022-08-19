@@ -13,7 +13,7 @@ contract ElevatorAttacker {
         target.goTo(1);
     }
 
-    function isLastFloor(uint256 floor) external returns (bool) {
+    function isLastFloor(uint256) external returns (bool) {
         a = !a;
         return a;
     }
