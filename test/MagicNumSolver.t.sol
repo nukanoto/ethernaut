@@ -19,6 +19,5 @@ contract MagicNumSolverTest is Test {
 }
 
 interface MagicNumSolver {
-  function whatIsTheMeaningOfLife() view external returns (uint256);
+    function whatIsTheMeaningOfLife() external view returns (uint256);
 }
-

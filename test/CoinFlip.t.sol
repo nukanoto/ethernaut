@@ -9,17 +9,17 @@ contract CoinFlipTest is Test {
     CoinFlip coinflip;
 
     function setUp() public {
-      coinflip = new CoinFlip();
+        coinflip = new CoinFlip();
     }
 
     function test() public {
-      CoinFlipAttacker attacker = new CoinFlipAttacker();
-      while (10 < coinflip.consecutiveWins()) {
-        bool result = attacker.attack(address(coinflip));
-        if (!result) {
-          revert("failed");
+        CoinFlipAttacker attacker = new CoinFlipAttacker();
+        while (10 < coinflip.consecutiveWins()) {
+            bool result = attacker.attack(address(coinflip));
+            if (!result) {
+                revert("failed");
+            }
         }
-      }
-      assertTrue(true);
+        assertTrue(true);
     }
 }

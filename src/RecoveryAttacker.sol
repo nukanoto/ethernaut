@@ -2,8 +2,7 @@
 pragma solidity ^0.8.15;
 
 contract RecoveryAttacker {
-  constructor() {}
+    constructor() {}
 
-  function attack(address payable targetAddress) external {
-  }
+    function attack(address payable targetAddress) external {}
 }

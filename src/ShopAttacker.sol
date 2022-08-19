@@ -14,7 +14,7 @@ contract ShopAttacker {
         instance.buy();
     }
 
-    function price() external view returns (uint) {
+    function price() external view returns (uint256) {
         if (!instance.isSold()) {
             return 100;
         } else {
